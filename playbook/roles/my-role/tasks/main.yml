@@ -1,0 +1,8 @@
+---
+
+- name: apt-get update
+  apt: update_cache=yes
+
+- name: Install deps
+  apt: name=nginx  state=present
+
